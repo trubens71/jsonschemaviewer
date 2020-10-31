@@ -36,7 +36,7 @@ mixpanel.init("5ef8c9f23cfe306986f4a4cddc0b0649");</script><!-- end Mixpanel -->
     </div>
     
     <!-- Editor -->
-    <div id="editor">
+    <div id="editor"></div>
       <!--{
     	"title": "Example Schema",
     	"type": "object",
@@ -56,9 +56,9 @@ mixpanel.init("5ef8c9f23cfe306986f4a4cddc0b0649");</script><!-- end Mixpanel -->
     	"required": ["firstName", "lastName"]
     }-->
     <script>
-    jQuery.getJSON('https://raw.githubusercontent.com/trubens71/verde/master/schemas/verde_asc_domain_schema.json'))
+    $('#editor').append($.getJSON('https://raw.githubusercontent.com/trubens71/verde/master/schemas/verde_asc_domain_schema.json'))
     </script>
-    </div>
+
     
     <!-- JSV -->
     <div id="main-body"></div>
